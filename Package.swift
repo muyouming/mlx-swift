@@ -16,13 +16,13 @@ let package = Package(
 
     products: [
         // main targets
-        .library(name: "MLX", targets: ["MLX"]),
-        .library(name: "MLXRandom", targets: ["MLXRandom"]),
-        .library(name: "MLXNN", targets: ["MLXNN"]),
-        .library(name: "MLXOptimizers", targets: ["MLXOptimizers"]),
-        .library(name: "MLXFFT", targets: ["MLXFFT"]),
-        .library(name: "MLXLinalg", targets: ["MLXLinalg"]),
-        .library(name: "MLXFast", targets: ["MLXFast"]),
+        .library(name: "MLX", type: .static, targets: ["MLX"]),
+        .library(name: "MLXRandom", type: .static, targets: ["MLXRandom"]),
+        .library(name: "MLXNN", type: .static, targets: ["MLXNN"]),
+        .library(name: "MLXOptimizers", type: .static, targets: ["MLXOptimizers"]),
+        .library(name: "MLXFFT", type: .static, targets: ["MLXFFT"]),
+        .library(name: "MLXLinalg", type: .static, targets: ["MLXLinalg"]),
+        .library(name: "MLXFast", type: .static, targets: ["MLXFast"]),
     ],
     dependencies: [
         // for Complex type
